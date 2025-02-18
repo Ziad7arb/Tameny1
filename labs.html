@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labs and Scan Centers - Tameny</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tameny</div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="reservations.html">Manage Reservations</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="labs">
+        <h1>Labs and Scan Centers</h1>
+
+        <div class="lab-options">
+            <button onclick="redirectToNearestLabs('analysis')">Select Type of Analysis You Need</button>
+            <button onclick="redirectToNearestLabs('upload')">Upload Image</button>
+        </div>
+    </section>
+</body>
+</html>

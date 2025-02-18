@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Selection - Tameny</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tameny</div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="reservations.html">Manage Reservations</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reserve-selection">
+        <h1>Reserve Your Appointment</h1>
+        <form id="reserve-form">
+            <label for="doctor">Choose a Doctor:</label>
+            <select id="doctor" required>
+                <option value="">Select a doctor...</option>
+                <option value="Dr. A">Dr. A</option>
+                <option value="Dr. B">Dr. B</option>
+                <option value="Dr. C">Dr. C</option>
+            </select>
+
+            <label for="datetime">Select Date and Time:</label>
+            <input type="datetime-local" id="datetime" required>
+
+            <button type="button" onclick="proceedToPayment()">Proceed to Payment</button>
+        </form>
+    </section>
+</body>
+</html>

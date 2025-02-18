@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments - Tameny</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tameny</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="appointments">
+        <h1>Book an Appointment</h1>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="doctor">Choose a Doctor:</label>
+            <select id="doctor">
+                <option>Dr. Ahmed Ali - Cardiologist</option>
+                <option>Dr. Sara Hassan - Dermatologist</option>
+            </select>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+</body>
+</html>

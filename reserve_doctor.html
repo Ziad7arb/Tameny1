@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Doctor - Tameny</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tameny</div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="reservations.html">Manage Reservations</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reserve-doctor">
+        <h1>Reserve a Doctor</h1>
+        <div class="reserve-options">
+            <button onclick="redirectToReserveSelection('area')">Display All Doctors in Your Area</button>
+            <button onclick="redirectToReserveSelection('upload')">Upload Image</button>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearest Pharmacies - Tameny</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tameny</div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="reservations.html">Manage Reservations</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="nearest-pharmacies">
+        <h1>Find a Pharmacy</h1>
+
+        <form id="pharmacy-selection-form">
+            <label for="pharmacy">Select Pharmacy:</label>
+            <select id="pharmacy" required>
+                <option value="">Choose a pharmacy...</option>
+                <option value="Pharmacy A">Pharmacy A</option>
+                <option value="Pharmacy B">Pharmacy B</option>
+                <option value="Pharmacy C">Pharmacy C</option>
+            </select>
+
+            <button type="button" onclick="confirmOrder()">Confirm Order</button>
+        </form>
+    </section>
+</body>
+</html>

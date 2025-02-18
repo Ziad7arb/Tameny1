@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearest Hospitals - Tameny</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tameny</div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="reservations.html">Manage Reservations</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="nearest-hospitals">
+        <h1>Display Nearest Available Hospitals</h1>
+        <label for="hospital">Select Hospital:</label>
+        <select id="hospital">
+            <option value="hospital1">Hospital 1</option>
+            <option value="hospital2">Hospital 2</option>
+            <option value="hospital3">Hospital 3</option>
+        </select>
+
+        <label for="datetime">Select Date and Time:</label>
+        <input type="datetime-local" id="datetime">
+
+        <button id="proceed-payment">Proceed to Payment</button>
+    </section>
+
+    <script>
+        document.getElementById("proceed-payment").addEventListener("click", function () {
+            window.location.href = "payment.html";
+        });
+    </script>
+</body>
+</html>
